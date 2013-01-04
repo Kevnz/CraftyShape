@@ -1,0 +1,27 @@
+{
+    "name": "Crafty Shape component",
+    "version": "1.0",
+    "title": "Shape",
+    "author": {
+        "name": "Luiz Paulo Bills",
+        "url": "http://craftyjs.com/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "description": "CraftyJS Shape component.",
+    "keywords": [
+        "javascript",
+		"Shape",
+		"Crafty",
+		"Component",
+    ],
+    "jsfiddle" : "http://jsfiddle.net/mCdUX/350/embedded/", 
+    "homepage": "https://github.com/luizpfbrandao/CraftyShape",
+    "files": [
+        "src/Shape.js",
+    ]
+}
