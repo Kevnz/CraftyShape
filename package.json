@@ -15,9 +15,9 @@
     "description": "CraftyJS Shape component.",
     "keywords": [
         "javascript",
-		"Shape",
-		"Crafty",
-		"Component",
+	"shape",
+	"crafty",
+	"component",
     ],
     "jsfiddle" : "http://jsfiddle.net/mCdUX/350/embedded/", 
     "homepage": "https://github.com/luizpfbrandao/CraftyShape",
