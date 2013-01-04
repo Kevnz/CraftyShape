@@ -12,7 +12,7 @@ Crafty.modules({ Shape: 'DEV' }, function () {
         .color("#FF0000");
 });
 
-***
+```
 
 ##License
 
