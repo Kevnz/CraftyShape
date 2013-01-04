@@ -86,7 +86,7 @@ Crafty.c("Shape", {
 				c.globalAlpha = this._alpha;
 			}
 
-			c.fillStyle = this._color || '#000';
+			c.fillStyle = this._color;
 			c.beginPath();
 			c.arc(this.radius, this.radius, this.radius, 0, Math.PI * 2);
 			c.closePath();
