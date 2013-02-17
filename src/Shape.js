@@ -28,7 +28,7 @@ Crafty.c("Shape", {
 	rect: function(w, h) {
 		this._shape = "rect";
 		this.w = w || 1;
-		this.h = h || 1;
+		this.h = h || this._w;
 		if (this.has('DOM')) {
 			this.css('border-radius','0%');
 		}
