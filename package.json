@@ -1,10 +1,10 @@
 {
     "name": "Shape",
-    "version": "1.0.0",
+    "version": "1.0.0.1",
     "title": "Shape",
     "author": {
         "name": "Luiz Paulo Bills",
-        "url": "https://github.com/luizpfbrandao/"
+        "url": "https://github.com/luizbills/"
     },
     "licenses": [
         {
@@ -24,7 +24,7 @@
 	"component"
     ],
     "jsfiddle" : "http://jsfiddle.net/mCdUX/350/embedded/", 
-    "homepage": "https://github.com/luizpfbrandao/CraftyShape",
+    "homepage": "https://github.com/luizbills/CraftyShape",
     "files": [
         "src/Shape.js"
     ]
