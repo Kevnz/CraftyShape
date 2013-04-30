@@ -4,10 +4,11 @@
 * Draw a geometric shape.
 */
 Crafty.c("Shape", {
-	_shape: null,
+	_shape: null, // type
 	
 	init: function() {
 		this.requires('2D, Color');
+
 		this._color = this._color || "#000";
 		this._drawMethods.default = this.draw;
 	},
@@ -29,12 +30,14 @@ Crafty.c("Shape", {
 		this._shape = "rect";
 		this.w = w || 1;
 		this.h = h || this._w;
+
 		if (this.has('DOM')) {
 			this.css('border-radius','0%');
 		}
 		else {
 			this.draw = this._drawMethods.default;
 		}
+
 		this.trigger('Change');
 		return this;
 	},
@@ -55,28 +58,30 @@ Crafty.c("Shape", {
 		this._shape = "circle";
 		this.radius = radius || 1;
 		this.w = this.h = this.radius * 2;
+
 		if (this.has('DOM')) {
 			this.css('border-radius','50%');
 		}
 		else {
 			this.draw = this._drawMethods.circle;
 		}
+
 		this.trigger('Change');
 		return this;
 	},
-	
+
 	_drawMethods: {
 		circle : function () {
 			if (!this.ready) return;
 			var c = Crafty.canvas.context;	
-			
+
 			c.save();
-				
+
 			if (this._mbr) {
 				c.translate(this._origin.x + this._x, this._origin.y + this._y);
 				c.rotate((this._rotation % 360) * (Math.PI / 180) /*Deg to Rad*/);
 			}
-				
+
 			if(this._flipX || this._flipY) {
 				c.scale((this._flipX ? -1 : 1), (this._flipY ? -1 : 1));
 			}

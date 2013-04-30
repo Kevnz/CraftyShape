@@ -7,11 +7,9 @@ A CraftyJS component to make geometric shapes.
 Crafty.init();
 
 Crafty.e("2D, DOM, Shape")
-    .circle(50)
-    .color("#FF0000");
-
+    .circle(50);
 ```
+***
 
 ##License
-
 Dual licensed under MIT.
