@@ -5,14 +5,14 @@
 */
 Crafty.c("Shape", {
 	_shape: null, // type
-	
+
 	init: function() {
 		this.requires('2D, Color');
 
 		this._color = this._color || "#000";
 		this._drawMethods.default = this.draw;
 	},
-	
+
 	/**@
 	* #.rect
 	* @comp Shape
